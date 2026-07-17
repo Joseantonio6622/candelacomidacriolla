@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candela Comida Criolla - Menú</title>
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        body {
+            background-color: #0d0d0d; /* Fondo negro carbón */
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(180deg, #ff3300 0%, #0d0d0d 100%); /* Degradado fuego */
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0px 4px 10px rgba(255, 51, 0, 0.7);
+        }
+
+        p.subtitle {
+            font-size: 1.1em;
+            color: #ffcc00; /* Amarillo candela */
+            margin-top: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* --- TARJETAS DE MENÚ --- */
+        .card {
+            background: #1a1a1a; /* Gris muy oscuro */
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border: 1px solid #333333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff3300; /* Brillo de fuego al pasar el mouse */
+        }
+
+        .emoji-header {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .sabor {
+            font-size: 1.6em;
+            color: #ff3300; /* Rojo fuego */
+            margin: 10px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .descripcion {
+            font-size: 1em;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* --- BOTÓN DE WHATSAPP --- */
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366; /* Verde oficial de WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: 0.3s ease;
+            width: 80%;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #121212;
+            color: #666666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🔥 Candela 🔥</h1>
+        <p class="subtitle">Comida Criolla • Delivery Guatire</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Hamburguesa de Cerdo -->
+        <div class="card">
+            <div class="emoji-header">🐷</div>
+            <div class="sabor">Hamburguesa de Cerdo</div>
+            <p class="descripcion">
+                Pan brioche, cebolla caramelizada, queso criollo, pepinillos, alfalfa, tomate fresco y jugosa carne de cerdo de 135 gramos.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Cerdo%20🐷🔥" 
+               target="_blank" 
+               class="btn-whatsapp">
+               💬 Pedir por WhatsApp
+            </a>
+        </div>
+
+        <!-- Hamburguesa de Pollo -->
+        <div class="card">
+            <div class="emoji-header">🐔</div>
+            <div class="sabor">Hamburguesa de Pollo</div>
+            <p class="descripcion">
+                Pan brioche con ajonjolí, ensalada césar, tomate fresco, queso americano, jugosa pechuga de pollo a la plancha y aderezo especial de miel mostaza.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Pollo%20🐔🔥" 
+               target="_blank" 
+               class="btn-whatsapp">
+               💬 Pedir por WhatsApp
+            </a>
+        </div>
+
+        <!-- Hamburguesa de Carne -->
+        <div class="card">
+            <div class="emoji-header">🥩</div>
+            <div class="sabor">Hamburguesa de Carne</div>
+            <p class="descripcion">
+                Pan brioche, deliciosa mermelada de tocineta casera, queso americano, cebolla fresca, lechuga, tomate, pepinillos y carne premium de 135 gramos con salsa de la casa.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Carne%20🥩🔥" 
+               target="_blank" 
+               class="btn-whatsapp">
+               💬 Pedir por WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Candela Comida Criolla • Diseñado por un Desarrollador Profesional</p>
+    </footer>
+
+</body>
+</html>
