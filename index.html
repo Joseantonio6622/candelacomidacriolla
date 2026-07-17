@@ -5,186 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candela Comida Criolla - Menú Digital</title>
     <style>
+        /* --- ESTILOS GENERALES Y COLORES DE MARCA --- */
         body {
-            background-color: #0c0d10; /* Fondo carbón muy oscuro */
+            background-color: #0c0d10; /* Fondo carbón oscuro */
             color: #f1f1f1;
-            font-family: 'Poppins', sans-serif; /* Usando una fuente más moderna y limpia */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
         }
+
         header {
-            background-color: #0c0d10;
-            padding: 40px 20px;
+            background: linear-gradient(180deg, #ff3300 0%, #0c0d10 100%); /* Degradado de fuego */
+            padding: 45px 20px;
         }
+
         h1 {
-            color: #ff6e40; /* Naranja warm de Candela */
-            margin: 0 0 10px 0;
+            color: #ffffff;
+            margin: 0;
             font-size: 2.8em;
             text-transform: uppercase;
-            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: 0px 4px 15px rgba(255, 51, 0, 0.8);
         }
+
         p.subtitle {
             font-size: 1.2em;
-            color: #f1f1f1;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 0 15px 40px 15px;
-        }
-        .menu-title {
-            color: #ff6e40;
-            margin: 40px 0 30px 0;
-            font-size: 1.8em;
+            color: #ffcc00; /* Amarillo fuego */
+            margin: 8px 0 0 0;
+            font-weight: bold;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 10px 20px 50px 20px;
+        }
+
+        .section-title {
+            color: #ff5500;
+            font-size: 1.6em;
+            margin: 30px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- TARJETAS DEL MENÚ --- */
         .card {
-            background-color: #1a1c21; /* Fondo de tarjeta más claro */
+            background-color: #16171d; /* Gris oscuro para resaltar */
             border-radius: 18px;
-            padding: 25px;
+            padding: 22px;
             margin: 25px auto;
-            border: 1px solid #2d3036;
+            border: 1px solid #2a2c35;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
+
+        /* Ajuste perfecto para las fotos locales */
         .burger-image {
             width: 100%;
+            height: auto;
             border-radius: 12px;
-            margin-bottom: 20px;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border: 1px solid #333;
         }
+
         .sabor {
-            font-size: 1.6em;
-            color: #ff6e40;
-            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            color: #ff5500;
+            margin: 0 0 8px 0;
             font-weight: bold;
-            width: 100%;
+            text-transform: uppercase;
         }
+
         .descripcion {
-            font-size: 1em;
-            color: #a0a0a0;
-            line-height: 1.6;
-            width: 100%;
-            margin: 0 0 20px 0;
+            font-size: 0.95em;
+            color: #b3b3b3;
+            line-height: 1.5;
+            margin: 0 0 18px 0;
         }
-        .ingredients {
-            width: 100%;
-            margin-bottom: 25px;
-        }
-        .ingredient-tag {
-            display: inline-block;
-            background-color: #2d3036;
-            color: #a0a0a0;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin: 4px;
-        }
-        /* 🟢 DISEÑO PROFESIONAL DEL BOTÓN DE WHATSAPP 🟢 */
+
+        /* --- BOTÓN DE WHATSAPP --- */
         .btn-whatsapp {
-            display: inline-block;
-            background-color: #25d366; /* Verde oficial de WhatsApp */
+            display: block;
+            background-color: #25d366; /* Verde de WhatsApp */
             color: white;
             text-decoration: none;
-            padding: 16px 35px;
-            font-size: 1.2em;
+            padding: 15px;
+            font-size: 1.1em;
             font-weight: bold;
             border-radius: 50px;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s ease, background-color 0.2s ease;
         }
+
         .btn-whatsapp:hover {
             background-color: #20ba5a;
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
+
+        /* --- PIE DE PÁGINA (TU PUBLICIDAD AUTOMÁTICA) --- */
         footer {
-            padding: 30px;
-            background-color: #0c0d10;
-            color: #606060;
-            font-size: 0.9em;
+            background-color: #08090c;
+            padding: 35px 20px;
+            color: #555555;
+            font-size: 0.85em;
+            border-top: 1px solid #16171d;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #ff5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
+    <!-- CABECERA -->
     <header>
         <h1>🔥 Candela 🔥</h1>
-        <p class="subtitle">Delivery y Pick Up Guatire</p>
+        <p class="subtitle">Comida Criolla • Delivery Guatire</p>
     </header>
 
+    <!-- CUERPO DE LA PÁGINA -->
     <div class="container">
-        <h2 class="menu-title">🍔 Nuestros Sabores Criollos 🍔</h2>
         
-        <!-- Hamburguesa 1 (Cerdo) -->
+        <h2 class="section-title">🍔 Nuestros Sabores Criollos 🍔</h2>
+
+        <!-- Hamburguesa de Cerdo -->
         <div class="card">
-            <!-- Imagen profesional basada en image_0.png -->
-            <img src="https://i.postimg.cc/mD8T1hWp/burger-cerdo-detailed.png" alt="Hamburguesa de Cerdo Detailed" class="burger-image">
+            <!-- Foto Local de la Hamburguesa de Cerdo -->
+            <img src="hamburguesa-cerdo.jpg" alt="Hamburguesa de Cerdo Candela" class="burger-image">
             <div class="sabor">Hamburguesa de Cerdo</div>
-            <p class="descripcion">Jugosa carne de cerdo 135gr en pan brioche artesanal, combinada con cebolla caramelizada, queso criollo y pepinillos.</p>
-            <div class="ingredients">
-                <span class="ingredient-tag">Pan Brioche</span>
-                <span class="ingredient-tag">Cebolla Caramelizada</span>
-                <span class="ingredient-tag">Queso Criollo</span>
-                <span class="ingredient-tag">Pepinillos</span>
-                <span class="ingredient-tag">Cerdo 135gr</span>
-            </div>
-            <!-- RECUERDA: Cambia el número "584121234567" por el de Candela en image_0.png -->
-            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20una%20Hamburguesa%20de%20Cerdo%20🍔" 
+            <p class="descripcion">
+                Jugosa carne de cerdo de 135gr en pan brioche artesanal, combinada con cebolla caramelizada, queso criollo, alfalfa, tomate fresco y pepinillos.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Cerdo%20🐷🔥" 
                target="_blank" 
                class="btn-whatsapp">
-               💬 Hacer pedido por WhatsApp
+               💬 Pedir por WhatsApp
             </a>
         </div>
 
-        <!-- Hamburguesa 2 (Pollo) -->
+        <!-- Hamburguesa de Pollo -->
         <div class="card">
-            <!-- Imagen profesional basada en image_0.png -->
-            <img src="https://i.postimg.cc/hGv5P8vK/burger-pollo-detailed.png" alt="Hamburguesa de Pollo Detailed" class="burger-image">
+            <!-- Foto Local de la Hamburguesa de Pollo -->
+            <img src="hamburguesa-pollo.jpg" alt="Hamburguesa de Pollo Candela" class="burger-image">
             <div class="sabor">Hamburguesa de Pollo</div>
-            <p class="descripcion">Filete de pollo jugoso a la plancha 135gr en pan brioche con ajonjolí, ensalada césar y queso americano.</p>
-            <div class="ingredients">
-                <span class="ingredient-tag">Pan Brioche c/ Ajonjolí</span>
-                <span class="ingredient-tag">Ensalada César</span>
-                <span class="ingredient-tag">Tomate</span>
-                <span class="ingredient-tag">Queso Americano</span>
-                <span class="ingredient-tag">Pollo Jugoso</span>
-            </div>
-            <!-- RECUERDA: Cambia el número "584121234567" por el de Candela en image_0.png -->
-            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20una%20Hamburguesa%20de%20Pollo%20🍔" 
+            <p class="descripcion">
+                Jugosa pechuga de pollo a la plancha de 135gr en pan brioche con ajonjolí, acompañada de fresca ensalada césar, tomate y queso americano.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Pollo%20🐔🔥" 
                target="_blank" 
                class="btn-whatsapp">
-               💬 Hacer pedido por WhatsApp
+               💬 Pedir por WhatsApp
             </a>
         </div>
 
-        <!-- Hamburguesa 3 (Carne) -->
+        <!-- Hamburguesa de Carne -->
         <div class="card">
-            <!-- Imagen profesional basada en image_0.png -->
-            <img src="https://i.postimg.cc/0jYfVv94/burger-carne-detailed.png" alt="Hamburguesa de Carne Detailed" class="burger-image">
+            <!-- Foto Local de la Hamburguesa de Carne -->
+            <img src="hamburguesa-carne.jpg" alt="Hamburguesa de Carne Candela" class="burger-image">
             <div class="sabor">Hamburguesa de Carne</div>
-            <p class="descripcion">Carne premium de la casa 135gr, con mermelada de tocineta, queso americano y cebolla fresca.</p>
-            <div class="ingredients">
-                <span class="ingredient-tag">Pan Brioche</span>
-                <span class="ingredient-tag">Mermelada de Tocineta</span>
-                <span class="ingredient-tag">Queso Americano</span>
-                <span class="ingredient-tag">Carne 135gr</span>
-                <span class="ingredient-tag">Tomate</span>
-            </div>
-            <!-- RECUERDA: Cambia el número "584121234567" por el de Candela en image_0.png -->
-            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20una%20Hamburguesa%20de%20Carne%20🍔" 
+            <p class="descripcion">
+                Carne vacuna premium de la casa de 135gr en pan brioche, con deliciosa mermelada de tocineta casera, queso americano, cebolla fresca, lechuga y tomate.
+            </p>
+            <a href="https://wa.me/584222263350?text=Hola%20Candela!%20Quiero%20ordenar%20la%20Hamburguesa%20de%20Carne%20🥩🔥" 
                target="_blank" 
                class="btn-whatsapp">
-               💬 Hacer pedido por WhatsApp
+               💬 Pedir por WhatsApp
             </a>
         </div>
 
     </div>
 
+    <!-- PIE DE PÁGINA (TU FIRMA) -->
     <footer>
-        <p>© 2026 joseantonio6622.github.io/mipagina/</p>
+        <p>© 2026 Candela Comida Criolla • Menú Digital Interactivo</p>
+        <p>¿Quieres un menú como este para tu negocio? 
+           <a href="https://joseantonio6622.github.io/mipagina/" target="_blank">
+               Contáctame aquí 🚀
+           </a>
+        </p>
     </footer>
 
 </body>
